@@ -1,0 +1,108 @@
+/* Estructura general */
+.contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1em; /* Espaciado entre elementos */
+    margin: 2em;
+  }
+  
+  /* Comentarios */
+  .comment-content {
+    border-radius: 10px;
+    margin: 5%;
+    background-color: #A68365;
+    padding: 20px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+  }
+  
+  /* Agregar scroll si hay muchos comentarios */
+  .comment-container {
+    max-height: 300px; /* Altura máxima */
+    overflow-y: auto; /* Scroll vertical */
+  }
+  
+  /* Formulario */
+  .formContacto {
+    width: 43%;
+    height: auto;
+    background-color: #D9C2A7;
+    border-radius: 2em;
+    margin: 2em;
+  }
+  .formContacto form{
+    margin: 5%;
+  }
+  
+  .titulo-cont {
+    background-color: #593520;
+    padding: 0.5em;
+    border-radius: 2em 2em 0 0;
+    text-align: center;
+  }
+  
+  .titulo-cont h5 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .form-control {
+    background-color: #A68365;
+    border-color: #A68365;
+    border-radius: 2em;
+    color: #fff; 
+  }
+  
+  #mensaje {
+    height: 100px;
+    
+  }
+  
+  /*Preguntas*/
+  .accordion{
+    margin: 5%;
+  }
+  .accordion-button{
+    background-color: #A68365;
+    color: white;
+  }
+  .accordion-button:hover{
+    background-color: #F2E4DC;
+    color: black;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #F2E4DC; /* Marrón oscuro */
+    color: black;
+}
+  
+  
+  .btn {
+    background-color: #A68365;
+    border-radius: 2em;
+    margin: 1em 0; 
+    margin-left: auto; 
+    display: block;
+  }
+  .btn:hover{
+    background-color:#593520 ;
+    color: white;
+  }
+  
+  /* Pantallas pequeñas */
+  @media screen and (max-width: 550px) {
+    .formContacto {
+      width: 95%; 
+    }
+  
+    .btn {
+      margin: 1em 0; 
+      margin-left: auto; 
+      display: block; 
+    }
+  }
+  

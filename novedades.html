@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mueblex</title>
+        <link rel="icon" href="img/Logo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap" rel="stylesheet">      
+        <link rel="stylesheet" href="estilos/homees.css">
+        <link rel="stylesheet" href="estilos/carrucel.css">
+        <link rel="stylesheet" href="estilos/piedepagina.css">
+        <link rel="stylesheet" href="estilos/texto.css">
+        <link rel="stylesheet" href="estilos/novedades.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      </head>
+  <body>
+<header>
+    <!--Carrusel de imagenes-->
+      <!--carrusel-->
+      <header>
+        <div class="header-inner">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <span class="logo">
+                  <img src="img/Logo.png" height="120" alt="">
+                </span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="novedades.html">Novedades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contactos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <script>
+          // JavaScript para ocultar el navbar y el logo al scrollear hacia abajo
+            let lastScrollTop = 0;
+            const navbar = document.querySelector('.navbar');
+            const logo = document.querySelector('.navbar .logo');
+  
+            window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+            if (scrollTop > lastScrollTop) {
+            navbar.style.top = '-80px'; 
+            logo.style.opacity = '0'; 
+            } else {
+            navbar.style.top = '0';
+            logo.style.opacity = '1';
+            }
+          lastScrollTop = scrollTop;
+          });
+        </script>
+        </div>
+          
+      
+          <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active bg-1">
+                  <img src="img/carr1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item bg-2">
+                  <img src="img/carr2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item bg-3">
+                  <img src="img/carr3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item bg-3">
+                  <img src="img/carr4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item bg-3">
+                  <img src="img/carr5.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+    </header>
+
+<!--Titulo Novedades-->
+<div class="texto_titulo" style="margin-top: 20px;">
+    <h1 class="titulos">Novedades</h1>
+    <br>
+    <br>
+  </div>
+<!--Ofertas y Descuentos-->
+<div class="div-gris">
+  <h2 class="subtitulo-novedades">Ofertas y Descuentos</h2>
+</div>
+<!--Carrusel de Cards Ofertas-->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card-carrusel">
+          <div class="card bg-dark text-white">
+              <img src="img/oferta1.jpg" class="card-img" alt="oferta1">
+              <div class="card-img-overlay">
+                <h5 class="card-title">40% DESCUENTO</h5>
+                <p class="card-text">llevando 6 sillas de contado</p>
+              </div>
+          </div>
+          <div class="card bg-dark text-white">
+              <img src="img/oferta2.jpg" class="card-img" alt="oferta2">
+              <div class="card-img-overlay">
+                <h5 class="card-title">30% de DESCUENTO </h5>
+                <p class="card-text">en camas ROSEN + colchon </p>
+              </div>
+          </div>
+          <div class="card bg-dark text-white">
+              <img src="img/oferta3.jpg" class="card-img" alt="oferta3">
+              <div class="card-img-overlay">
+                <h5 class="card-title">6 CUOTAS SIN INTERES</h5>
+                <p class="card-text">en Sillon marca QUINTI</p>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+    <div class="carousel-item">
+      <div class="card-carrusel">
+        <div class="card bg-dark text-white">
+          <img src="img/oferta4.jpg" class="card-img" alt="oferta4">
+          <div class="card-img-overlay">
+            <h5 class="card-title">25% DESCUENTO</h5>
+            <p class="card-text">en mueble para baño marca MOBI</p>
+          </div>
+      </div>
+      <div class="card bg-dark text-white">
+        <img src="img/oferta5.jpg" class="card-img" alt="oferta5">
+        <div class="card-img-overlay">
+          <h5 class="card-title">KIT CON 15% DE DESCUENTO</h5>
+          <p class="card-text">en colchon CASATAPACK + cama LEO + almohadas PULLMAN</p>
+        </div>
+      </div>
+      <div class="card bg-dark text-white">
+        <img src="img/oferta6.jpg" class="card-img" alt="oferta6">
+        <div class="card-img-overlay">
+          <h5 class="card-title">12 CUOTAS SIN INTERES</h5>
+          <p class="card-text">en despansa de cocina HOMSEE, con encimera y puertas de cristal</p>
+        </div>
+      </div>
+     </div>
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <!-- Carrusel alternativo (pantallas pequeñas) -->
+  <div id="carouselSmall" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <img src="img/oferta1.jpg" class="card-img" alt="oferta1">
+              <div class="card-img-overlay">
+                <h5 class="card-title">40% DESCUENTO</h5>
+                <p class="card-text">llevando 6 sillas de contado</p>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <img src="img/oferta2.jpg" class="card-img" alt="oferta2">
+              <div class="card-img-overlay">
+                <h5 class="card-title">30% de DESCUENTO </h5>
+                <p class="card-text">en camas ROSEN + colchon </p>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <img src="img/oferta3.jpg" class="card-img" alt="oferta3">
+              <div class="card-img-overlay">
+                <h5 class="card-title">6 CUOTAS SIN INTERES</h5>
+                <p class="card-text">en Sillon marca QUINTI</p>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <img src="img/oferta4.jpg" class="card-img" alt="oferta4">
+              <div class="card-img-overlay">
+                <h5 class="card-title">25% DESCUENTO</h5>
+                <p class="card-text">en mueble para baño marca MOBI</p>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <img src="img/oferta5.jpg" class="card-img" alt="oferta5">
+              <div class="card-img-overlay">
+                <h5 class="card-title">KIT CON 15% DE DESCUENTO</h5>
+                <p class="card-text">en colchon CASATAPACK + cama LEO + almohadas PULLMAN</p>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-dark text-white">
+              <img src="img/oferta6.jpg" class="card-img" alt="oferta6">
+              <div class="card-img-overlay">
+                <h5 class="card-title">12 CUOTAS SIN INTERES</h5>
+                <p class="card-text">en despansa de cocina HOMSEE, con encimera y puertas de cristal</p>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSmall" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselSmall" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!--Nuevos Lanzamientos-->
+<div class="div-gris">
+<h2 class="subtitulo-novedades">Nuevos Lanzamientos</h2>
+</div>
+
+<!--Carrusel de Cards Lanzamientos-->
+<div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <div class="card-carrusel">
+        <div class="card bg-dark text-white">
+            <img src="img/nuevo1.jpg" class="card-img" alt="nuevo1">
+            <div class="card-img-overlay">
+              <h5 class="card-title">PROXIMAMENTE</h5>
+              <p class="card-text">Línea de sillones y sofás DOMUS</p>
+            </div>
+        </div>
+        <div class="card bg-dark text-white">
+            <img src="img/nuevo2.jpg" class="card-img" alt="nuevo2">
+            <div class="card-img-overlay">
+              <h5 class="card-title">PROXIMAMENTE</h5>
+              <p class="card-text">Línea de sillas de escritorio WINDSOR</p>
+            </div>
+        </div>
+        <div class="card bg-dark text-white">
+            <img src="img/nuevo3.jpg" class="card-img" alt="nuevo3">
+            <div class="card-img-overlay">
+              <h5 class="card-title">PROXIMAMENTE</h5>
+              <p class="card-text">Escritorio de oficina ejecutivo GRACE, en forma de L</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="carousel-item">
+    <div class="card-carrusel">
+     <div class="card bg-dark text-white">
+        <img src="img/nuevo4.jpg" class="card-img" alt="nuevo4">
+        <div class="card-img-overlay">
+          <h5 class="card-title">PROXIMAMENTE</h5>
+          <p class="card-text">Cama compacta blanco + cama desplazable + 3 contenedores</p>
+        </div>
+      </div>
+     <div class="card bg-dark text-white">
+      <img src="img/nuevo5.jpg" class="card-img" alt="nuevo5">
+      <div class="card-img-overlay">
+        <h5 class="card-title">PROXIMAMENTE</h5>
+        <p class="card-text">Ropero de madera moderno MOBI</p>
+      </div>
+     </div>
+     <div class="card bg-dark text-white">
+    <img src="img/nuevo6.jpg" class="card-img" alt="nuevo6">
+    <div class="card-img-overlay">
+      <h5 class="card-title">PROXIMAMENTE</h5>
+      <p class="card-text">Gabinete de baño SABIK, negro, con puertas batientes y entrepaño movil X2</p>
+    </div>
+    </div> 
+  </div>
+ </div>
+  
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+
+  <!--Carrusel de Cards Lanzamientos (pantallas pequeñas)-->
+<div id="carouselSmall2" class="carousel slide carousel-fade">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <div class="row">
+      <div class="col">
+        <div class="card bg-dark text-white">
+          <img src="img/nuevo1.jpg" class="card-img" alt="nuevo1">
+          <div class="card-img-overlay">
+            <h5 class="card-title">PROXIMAMENTE</h5>
+            <p class="card-text">Línea de sillones y sofás DOMUS</p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="card bg-dark text-white">
+          <img src="img/nuevo2.jpg" class="card-img" alt="nuevo2">
+          <div class="card-img-overlay">
+            <h5 class="card-title">PROXIMAMENTE</h5>
+            <p class="card-text">Línea de sillas de escritorio WINDSOR</p>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="card bg-dark text-white">
+          <img src="img/nuevo3.jpg" class="card-img" alt="nuevo3">
+          <div class="card-img-overlay">
+            <h5 class="card-title">PROXIMAMENTE</h5>
+            <p class="card-text">Escritorio de oficina ejecutivo GRACE, en forma de L</p>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="card bg-dark text-white">
+          <img src="img/nuevo4.jpg" class="card-img" alt="nuevo4">
+          <div class="card-img-overlay">
+            <h5 class="card-title">PROXIMAMENTE</h5>
+            <p class="card-text">Cama compacta blanco + cama desplazable + 3 contenedores</p>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="card bg-dark text-white">
+          <img src="img/nuevo5.jpg" class="card-img" alt="nuevo5">
+          <div class="card-img-overlay">
+            <h5 class="card-title">PROXIMAMENTE</h5>
+            <p class="card-text">Ropero de madera moderno MOBI</p>
+          </div>
+         </div>
+    </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col">
+        <div class="card bg-dark text-white">
+          <img src="img/nuevo6.jpg" class="card-img" alt="nuevo6">
+          <div class="card-img-overlay">
+            <h5 class="card-title">PROXIMAMENTE</h5>
+            <p class="card-text">Gabinete de baño SABIK, negro, con puertas batientes y entrepaño movil X2</p>
+          </div>
+          </div> 
+    </div>
+    </div>
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselSmall2" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselSmall2" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+
+<!--Noticias-->
+<div class="div-gris">
+  <h2 class="subtitulo-novedades">Noticias</h2>
+</div>
+
+<!--Cards de Noticias-->
+<div class="card-noticias">
+
+  <div class="row">
+    
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title-noti">Nuevo color nevada en líneas TANA</h5>
+          <br>
+          <p class="card-text-noti">Nevada, un nuevo color para los placares de la línea TANA PLUS, y para los complementos de la línea PLUSPACK.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title-noti">Imperio: una nueva línea que conquista tu hogar</h5>
+          <br>
+          <p class="card-text-noti">Te presentamos Imperio, una nueva línea que representa la conquista del estilo moderno actual para tu hogar.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title-noti">Nuevo color Moccha en Líneas Tana Plus y Pluspack</h5>
+          <br>
+          <p class="card-text-noti">Presentamos Moccha, un nuevo color con una tonalidad que aporta calidez y autenticidad a tu dormitorio.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!--Pie de pagina-->
+<footer>
+  <div class="container">
+      <div class="row" id="footer">
+          <div class="col-3">
+              <img src="img/logob.png" class="pol" alt="logo_muebles">
+          </div>
+          <div class="col-3">
+              <p class="info1">
+                  <i class="fas fa-envelope iconos"></i> mueblex_sj@gmail.com
+              </p>
+              <p class="info2">
+                  <i class="fas fa-map-marker-alt iconos"></i> Mendoza 666 S San Juan
+              </p>
+          </div>
+          <div class="col-3">
+              <p class="info1">
+                  <i class="fas fa-phone iconos"></i> 2646251810
+              </p>
+              <p class="info2">
+                  <i class="fas fa-phone iconos"></i> 2645781752
+              </p>
+          </div>
+          <div class="col-3">
+              <a class="enlace-red" href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook iconos"></i>
+              </a>
+              
+              <a class="enlace-red" href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram iconos"></i>
+              </a>
+              
+              <a class="enlace-red" href="https://web.whatsapp.com" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp iconos"></i>
+              </a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+  </body>
+</html> 
